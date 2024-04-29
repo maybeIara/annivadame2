@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversaire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>🎉 TROUVE TON CADEAU CRETIN ! 🎉</h1>
+        <div id="questions">
+            <div class="question">
+                <p>Couleur préférée de maman ? - EASY (sans majuscule)</p>
+                <input type="text" id="answer1" placeholder=" réponse...">
+                <button onclick="checkAnswer(1)">Vérifier</button>
+                <span id="response1" class="response"></span>
+            </div>
+            <div class="question">
+                <p>Couleur de samir ? - AVERAGE (sans majuscule)</p>
+                <input type="text" id="answer2" placeholder=" réponse...">
+                <button onclick="checkAnswer(2)">Vérifier</button>
+                <span id="response2" class="response"></span>
+            </div>
+            <div class="question">
+                <p>Couleur préférée de Lara ? - MDR (sans majuscule)</p>
+                <input type="text" id="answer3" placeholder=" réponse...">
+                <button onclick="checkAnswer(3)">Vérifier</button>
+                <span id="response3" class="response"></span>
+            </div>
+        </div>
+        <div id="final-response" class="response-box"></div>
+        <img src="car.jpeg" id="car-image" class="response-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
